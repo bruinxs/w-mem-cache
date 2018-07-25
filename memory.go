@@ -6,7 +6,8 @@ import (
 	"github.com/silenceper/wechat/cache"
 )
 
-var _ cache.Cache = NewMemoryCache()
+//Default global cache
+var Default cache.Cache = NewMemoryCache()
 
 //Item value
 type Item struct {
